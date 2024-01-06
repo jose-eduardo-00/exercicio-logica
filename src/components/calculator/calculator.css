@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    user-select: none;
 }
 
 .container h1 {
@@ -12,20 +13,22 @@
     width: 300px;
     height: 400px;
     border-radius: 20px;
-    background-color: darkgrey;
+    background-color: #E1E2EF;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
 }
 
-.container .calculator input {
+.container .calculator .screen {
     width: 90%;
     height: 12%;
-    background-color: grey;
+    background-color: #838681;
     border-radius: 15px;
-    border-color: transparent;
+    border-top: 7px solid #686b65;
+    border-left: 7px solid #686b65;
     color: #fff;
 }
 
@@ -43,15 +46,16 @@
 }
 
 .container .calculator .button-div .button-row button {
+    cursor: pointer;
     padding: 15px;
     color: #fff;
-    border-color: darkorchid;
+    border-color: #7F2CCB;
     border-radius: 10px;
-    background-color: darkorchid;
+    background-color: #7F2CCB;
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
 }
 
 .container .calculator .button-div .button-row:last-child button:last-child {
-    background-color: crimson;
-    border-color: crimson;
+    background-color: #FF0054;
+    border-color: #FF0054;
 }

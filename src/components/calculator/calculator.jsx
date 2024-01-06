@@ -6,7 +6,7 @@ const Calculator = () => {
             <h1>Calculadora</h1>
 
             <div className='calculator'>
-                <input type="text" />
+                <div className='screen'></div>
                 <div className='button-div'>
                     <div className='button-row'>
                         <button>7</button>
