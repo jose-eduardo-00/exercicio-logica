@@ -11,11 +11,130 @@
 .container .todo-list {
     width: 300px;
     height: 400px;
-    border-radius: 20px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.container .todo-list .header {
+    width: 100%;
+    height: 13%;
+    background-color: #1E90FF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.container .todo-list .search {
+    border: 1px solid #c5c6d3;
+    border-radius: 6px;
+}
+
+.container .todo-list .search input {
+    border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 10px;
+    outline: 0;
+}
+
+.container .todo-list .search button {
+    border: none;
+    border-left: 1px solid #c5c6d3;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 10px 12px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.container .todo-list .tasks {
+    width: 90%;
+}
+
+.container .todo-list .tasks .task {
+    display: flex;
     justify-content: space-evenly;
-    padding: 15px;
+    align-items: center;
+    border: 1px solid #c5c6d3;
+    padding: 8px;
+}
+
+.container .todo-list .tasks .task .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 10px;
+    border: 1px solid #000;
+    padding: 1px 1.6px;
+    cursor: pointer;
+}
+
+.container .todo-list .tasks .task .check.done {
+    color: #008000;
+    border-color: #008000;
+}
+
+.container .todo-list .tasks .task p {
+    width: 70%;
+}
+
+.container .todo-list .tasks .task .trash {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.container .todo-list .btn-clear {
+    padding: 10px 13px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #141010;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container .todo-list .footer {
+    width: 100%;
+    height: 13%;
+    border-top: 1px solid #c5c6d3;
+    background-color: #efeff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.container .todo-list .footer .footer-div {
+    border: 1px solid #c5c6d3;
+    border-radius: 6px;
+}
+
+.container .todo-list .footer input {
+    border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 10px;
+    outline: 0;
+}
+
+.container .todo-list .footer .btn-add {
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #fff;
+    background-color: #1E90FF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container .todo-list .footer .btn-add .icon-add {
+    margin-right: 3px;
 }

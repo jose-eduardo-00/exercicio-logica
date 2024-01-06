@@ -1,37 +1,41 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './toDoList.css'
+import { faCheck, faMagnifyingGlass, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const ToDoList = () => {
     return (
         <section className="container">
             <h1>Lista de Tarefa</h1>
             <div className='todo-list'>
-                <header>Lista de Tarefa</header>
-                <div>
-                    <input type="search" />
-                    {/* adicionar icone de pesquisa */}
+                <header className='header'>Lista de Tarefa</header>
+                <div className='search'>
+                    <input type="text" placeholder='Search Task' />
+                    <button>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    </button>
                 </div>
-                <div>
-                    <div>
-                        {/* icone para marcar certo e errado */}
-                        <p>texto da tarfea</p>
-                        {/* icone de lixeira */}
+                <main className='tasks'>
+                    <div className='task'>
+                        <div className='check'><FontAwesomeIcon icon={faCheck} /></div>
+                        <p>texto da tarefa</p>
+                        <div><FontAwesomeIcon icon={faTrash} className='trash' /></div>
                     </div>
-                    <div>
-                        {/* icone para marcar certo e errado */}
-                        <p>texto da tarfea</p>
-                        {/* icone de lixeira */}
+                    <div className='task'>
+                        <div className='check done'><FontAwesomeIcon icon={faCheck} /></div>
+                        <p>texto da tarefa texto da tarefa</p>
+                        <div><FontAwesomeIcon icon={faTrash} className='trash' /></div>
                     </div>
-                    <div>
-                        {/* icone para marcar certo e errado */}
-                        <p>texto da tarfea</p>
-                        {/* icone de lixeira */}
+                    <div className='task'>
+                        <div className='check'><FontAwesomeIcon icon={faCheck} /></div>
+                        <p>texto da tarefa</p>
+                        <div><FontAwesomeIcon icon={faTrash} className='trash' /></div>
                     </div>
-                </div>
-                <button>Clear All</button> 
-                <footer>
-                    <div>
-                        <input type="text" />
-                        <button>+add</button>
+                </main>
+                <button className='btn-clear'>Clear All</button> 
+                <footer className='footer'>
+                    <div className='footer-div'>
+                        <input type="text" placeholder='Add new Task' />
+                        <button className='btn-add'><FontAwesomeIcon icon={faPlus} className='icon-add' />Add</button>
                     </div>
                 </footer> 
             </div>
