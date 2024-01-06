@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 40px;
+}
+
+.container .stopwatch {
+    width: 350px;
+    height: 130px;
+    background-color: #71757c;
+    border: 6px solid #404347;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .stopwatch p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.container .stopwatch .stopwatch-options {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .stopwatch .stopwatch-options button {
+    font-size: 16px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #000000ab;
+    border-radius: 15px;
+    cursor: pointer;
+}
