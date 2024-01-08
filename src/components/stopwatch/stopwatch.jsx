@@ -16,4 +16,6 @@ const Stopwatch = () => {
     )
 }
 
+// criar a logica pra que os tres exercicios funcionem corretamente
+
 export { Stopwatch }
