@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { Task } from '../task/task'
 import './toDoList.css'
-import { faCheck, faMagnifyingGlass, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const ToDoList = () => {
     return (
@@ -15,21 +16,9 @@ const ToDoList = () => {
                     </button>
                 </div>
                 <main className='tasks'>
-                    <div className='task'>
-                        <div className='check'><FontAwesomeIcon icon={faCheck} /></div>
-                        <p>texto da tarefa</p>
-                        <div><FontAwesomeIcon icon={faTrash} className='trash' /></div>
-                    </div>
-                    <div className='task'>
-                        <div className='check done'><FontAwesomeIcon icon={faCheck} /></div>
-                        <p>texto da tarefa texto da tarefa</p>
-                        <div><FontAwesomeIcon icon={faTrash} className='trash' /></div>
-                    </div>
-                    <div className='task'>
-                        <div className='check'><FontAwesomeIcon icon={faCheck} /></div>
-                        <p>texto da tarefa</p>
-                        <div><FontAwesomeIcon icon={faTrash} className='trash' /></div>
-                    </div>
+                    <Task />
+                    <Task />
+                    <Task />
                 </main>
                 <button className='btn-clear'>Clear All</button> 
                 <footer className='footer'>

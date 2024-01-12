@@ -57,39 +57,6 @@
     width: 90%;
 }
 
-.container .todo-list .tasks .task {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid #c5c6d3;
-    padding: 8px;
-}
-
-.container .todo-list .tasks .task .check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    font-size: 10px;
-    border: 1px solid #000;
-    padding: 1px 1.6px;
-    cursor: pointer;
-}
-
-.container .todo-list .tasks .task .check.done {
-    color: #008000;
-    border-color: #008000;
-}
-
-.container .todo-list .tasks .task p {
-    width: 70%;
-}
-
-.container .todo-list .tasks .task .trash {
-    color: #ff0000;
-    cursor: pointer;
-}
-
 .container .todo-list .btn-clear {
     padding: 10px 13px;
     letter-spacing: 1px;
